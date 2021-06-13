@@ -12,6 +12,43 @@ class App extends Component {
     }
   }
 
+  onClick = button => {
+    if(button === "="){
+      this.calculate()
+    } else if(button === "C"){
+      this.reset()
+    }else{
+      this.setState({
+        result: this.state.result + button
+      })
+    }
+  }
+
+  calculate = () => {
+    let checkResult = ''
+    if(this.state.result.includes('--')){    //if user does 5 - -4. it changes the double negative to plus. 
+      checkResult = this.state.result.replace('--', '+')
+    } else {
+      checkResult = this.state.result
+    }
+    try {
+      this.setState({
+        //eslint-disable-next-line
+        result: (eval(checkResult))
+      })
+    } catch (e) {
+      this.setState({
+        result: 'error'
+      })
+    }
+  };
+
+  reset = () => {
+    this.setState({
+      result: ""
+    })
+  }
+
   render() {
     return (
       <div>

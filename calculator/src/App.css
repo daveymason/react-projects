@@ -13,3 +13,25 @@ body{
   background-color: grey;
   width: 100%;
 }
+.result h2{
+  font-size: 30px;
+  margin: 5px;
+  padding: 5px;
+}
+
+button{
+  height: 50px;
+  width: 25%;
+  font-size: 30px;
+}
+
+#cBtn{
+  background-color: red;
+}
+#equalsBtn{
+  background-color: green;
+}
+.calculator{
+  max-width: 400px;
+  margin: auto;
+}
