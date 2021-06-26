@@ -35,6 +35,7 @@ import React, {useState} from 'react';
     });
 
     };
+
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
