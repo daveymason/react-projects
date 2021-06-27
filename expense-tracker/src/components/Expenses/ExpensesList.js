@@ -3,10 +3,8 @@ import ExpenseItem from './ExpenseItem'
 import './ExpensesList.css';
 
 const ExpensesList = (props) => {
-    let expensesContent = <p>No Expenses Yet</p>;
-
     if(props.items.length === 0){
-        return <h2 className='expenses-list_fallback'>No expenses yet..</h2>;
+        return <h2 className='expenses-list__fallback'>No expenses yet...</h2>;
     }
 
 
