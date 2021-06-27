@@ -46,7 +46,7 @@ class App extends React.Component {
 
   addToList = (title) => {
     const newTodo = {
-      id: 4,
+      id: Math.random().toString(),
       title,
       finished: false
     }
