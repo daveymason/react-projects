@@ -6,11 +6,10 @@ import Meals from './components/Meals/Meals';
 function App() {
   return (
     <Fragment>
-      <Header>
-        <main>
-          <Meals />
-        </main>
-      </Header>
+      <Header/>
+      <main>
+        <Meals />
+      </main>
     </Fragment>
   );
 }
